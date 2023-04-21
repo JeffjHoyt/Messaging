@@ -17,6 +17,9 @@ function App() {
 
   const handleMessageSubmit = (e) => {
     e.preventDefault();
+    if (!newMessage.trim()) {
+      return; // If the input is empty or contains only white space, don't send the message
+    }
     setMessages([...messages, { text: newMessage, sender: "sent" }]);
     setNewMessage("");
   };
