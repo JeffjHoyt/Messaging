@@ -61,6 +61,8 @@
   line-height: 1.5;
   border: none;
   background-color: transparent;
+  border: none;
+  transform: none;
 }
 
 .input-container button {
